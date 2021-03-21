@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #1e1f20;
+    margin: 0;
+    font-weight: 300;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    flex: 4;
+}
+
+.right{
+    background: #0d0f12;
+    height: 100%;
+    flex: 6;
+}
+
+/* Right Side */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.right-btn{
+    position: absolute;
+    left: 62%;
+    background: linear-gradient(103.33deg, #EC0090 0%, #F15A29 100%);
+    border: none;
+    color: #ffff;
+    border-radius: 2px;
+    width: 15%;
+    padding: 19.5px 14.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;    
+    margin-top: 50px;
+}
+
+
+.hash-img{
+    width: 60%;
+}
+
+.skill-img{
+    margin-top: 12px;
+    width: 40%;
+}
+
+.main-img{
+    width: 100%;
+    margin-top: 60px;
+}
+
+/* Left Side */
+
+.content-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+    width: 55%;
+    margin-top: 40px;
+}
+
+form{
+    margin-top: 50px;
+    width: 80%;
+}
+
+label{
+    display: block;
+    font-size: 13.5px;
+    font-weight: 200;
+    margin-bottom: 2.5px;
+    letter-spacing: 0.5px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    background:  #1e1f20;
+    border: 1px solid hsla(0, 0%, 100%, .3);
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.signin-btn{
+    background:#0084BD;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    width: 100%;
+    padding: 13px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.signin-btn:hover{
+    background: #0074ab;
+}
+
+.forgot{
+    text-decoration: none;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    color: #2EA0D6;
+    margin-top: 50px;
+}
+
+.school{
+    text-decoration: none;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    color: #2EA0D6;
+    margin-top: 20px;
+}
+
+.forgot:hover{
+    text-decoration: underline;
+}
+
+.school:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 80%;
+    margin: 20px;
+    border: 0.2px solid hsla(0, 0%, 100%, .15);
+    margin-bottom: 5px;
+}
+
+.create-account-btn{
+    background:hsla(0, 0%, 100%, .15);
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    width: 80%;
+    padding: 13px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.create-account-btn:hover{
+    background: hsla(0, 0%, 100%, .2);
+}
+.left-footer{
+    width: 70%;
+    margin-top: 35px;
+}
+
+.footer-text{
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: hsla(0, 0%, 100%, .65);
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.term{
+    color: hsla(0, 0%, 100%, .65);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  
+}
+
+.privacy{
+    color: hsla(0, 0%, 100%, .65);
+    font-size: 13px;
+    letter-spacing: 0.5px;   
+}
+
+.icon{
+    color: hsla(0, 0%, 100%, .45);
+    position: absolute;
+    left: 2%;
+}
+
+.privacy:hover{
+    color: #2EA0D6;
+}
+
+.term:hover{
+    color: #2EA0D6;
+}
+
+/* Media Queries */
+
+
+@media (max-width:900px){
+   .left{
+       width: 100%;
+   }
+
+   .right{
+       display: none;
+   }
+
+   .logo{
+    width: 350px;
+   }
+
+   hr{
+       width: 100%;
+   }
+
+}
